@@ -6,7 +6,7 @@
 ###### Discord nickname: `Elizaveta N. (@kotangenss)`
 ###### LinkedIn: [Elizaveta Novikova](https://www.linkedin.com/in/elizaveta-isupova-a93522216/)
 ## About me 
-I am constantly developing in the study of technology, quickly navigate new information and perfectly adapt to changes. I also have **experience as a UI-UX designer**, which allows me to approach tasks creatively. </br> </br> I own the basics **HTML**, **CSS**, **JavaScript**, **Git**. I know how to work with the Git version control system
+I am constantly developing in the study of technology, quickly navigate new information and perfectly adapt to changes. I also have **experience as a UI-UX designer**, which allows me to approach tasks creatively. I own the basics **HTML**, **CSS**, **JavaScript**, **Git**. I know how to work with the Git version control system
 
 ## My skills
 * HTML5, CSS3
