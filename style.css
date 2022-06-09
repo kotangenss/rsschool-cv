@@ -96,7 +96,7 @@ body {
    font-family: 'Roboto', sans-serif;
    font-weight: 400;
    background-color: #001448;
-   background-image: url("/assets/img/noise__backgroubd.png");
+   background-image: url("./assets/img/noise__backgroubd.png");
 }
 
 /*================WRAPPERS=========================*/
@@ -215,7 +215,7 @@ body {
 .contacts__title-wrapper {
    min-height: 100px;
    min-width: 578px;
-   background: url('/assets/img/stroke.png') 50% no-repeat;
+   background: url('./assets/img/stroke.png') 50% no-repeat;
 }
 .contacts__title {
    display: flex;
