@@ -1,3 +1,4 @@
+/*Обнуляющий стиль*/
 * {
    padding: 0;
    margin: 0;
@@ -85,4 +86,479 @@ h5,
 h6 {
    font-size: inherit;
    font-weight: 400;
+}
+
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 16px;
+   color: #252B42;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   background-color: #001448;
+   background-image: url("/assets/img/noise__backgroubd.png");
+}
+
+/*================WRAPPERS=========================*/
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.container {
+   padding: 0 15px;
+   max-width: 1192px;
+   margin: 0 auto;
+   box-sizing: content-box;
+}
+
+
+/*================HEADER=========================*/
+
+.header {
+   display: block;
+   width: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgb(234, 234, 234);
+}
+.header__container {
+   justify-content: space-between;
+   display: flex;
+   min-height: 70px;
+   align-items: center;
+}
+.header__menu {
+   padding: 5px 0;
+   display: inline-block;
+}
+
+.menu__list {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   color: black;
+   flex-wrap: wrap;
+}
+.menu__item {
+   margin: 0 -5px;
+}
+
+.menu__link {
+   color: #001448;
+}
+
+.menu__link::before,
+.footer__link::before {
+   content: "<";
+   margin-right: 10px;
+   transform: translateX(20px);
+   transition: transform 0.3s,
+   opacity 0.2s;
+   display: inline-block;
+   opacity: 0;
+}
+
+.menu__link:hover::before,
+.footer__link:hover::before{
+   opacity: 1;
+   transform: translateX(0px);
+   color: #001448;
+}
+
+.footer__link:hover {
+   color: #001448;
+}
+
+.menu__link:hover::after,
+.footer__link:hover::after {
+   opacity: 1;
+   transform: translateX(0px);
+   color: #001448;
+}
+
+.menu__link::after,
+.footer__link::after {
+   content: ">";
+   margin-left: 10px;
+   transition: transform 0.3s,
+   opacity 0.2s;
+   transform: translateX(-20px);
+   display: inline-block;
+   opacity: 0;
+}
+
+.block {
+   flex: 1 1 auto;
+}
+
+/*================CONTACTS=========================*/
+
+.contacts {
+   padding-top: 40px;
+}
+
+.contacts__container {
+   display: flex;
+   align-items: center;
+}
+
+.contacts__body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.contacts__title-wrapper {
+   min-height: 100px;
+   min-width: 578px;
+   background: url('/assets/img/stroke.png') 50% no-repeat;
+}
+.contacts__title {
+   display: flex;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #33FF00;
+   max-width: 367px;
+   margin: 0 auto;
+   padding-top: 6%;
+}
+
+.contacts__title::after {
+   content: ">";
+   font-size: 26px;
+   color: #33FF00;
+   margin-left: 5px;
+}
+
+.contacts__title::before {
+   content: "<";
+   font-size: 26px;
+   color: #33FF00;
+   margin-right: 5px;
+}
+
+.contacts__name {
+   font-weight: 700;
+   font-size: 78px;
+   line-height: 130%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding: 30px 0px;
+}
+
+.contacts__list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.item-contact {
+   display: flex;
+   align-items: center;
+   transition: all 0.5s ease 0s;
+}
+.item-contact:not(:last-child) {
+   padding-right: 25px;
+}
+.item-contact:hover {
+   transform: scale(1.18);
+   transition-property: all;
+   transition-duration: 0.3s;
+   transition-delay: 0s;
+}
+
+.item-contact__info {
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 100%;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.contacts__location {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 130%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #33FF00;
+   padding: 30px 0px;
+}
+
+/*================ABOUT ME and general=================*/
+
+.about-me__body,
+.my-skills__body,
+.code-examples__body,
+.education__body,
+.work-experience__body,
+.languages__body {
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 40px;
+   margin-bottom: 30px;
+   transition: all 0.2s ease 0s;
+}
+
+.about-me__body:hover,
+.my-skills__body:hover,
+.code-examples__body:hover,
+.education__body:hover,
+.work-experience__body:hover,
+.languages__body:hover {
+   transform: scale(1.02);
+   transition-property: all;
+   transition-duration: 0.3s;
+   transition-delay: 0s;
+}
+
+.about-me__title,
+.my-skills__title,
+.code-examples__title,
+.education__title,
+.work-experience__title,
+.languages__title {
+   max-width: 308px;
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 130%;
+   text-transform: uppercase;
+   color: #001448;
+   margin-right: 20px;
+}
+.about-me__title::before,
+.my-skills__title::before,
+.code-examples__title::before,
+.education__title::before,
+.work-experience__title::before,
+.languages__title::before {
+   content: '<';
+   font-size: 46px;
+   margin-right: 5px;
+}
+.about-me__title::after,
+.my-skills__title::after,
+.code-examples__title::after,
+.education__title::after,
+.work-experience__title::after,
+.languages__title::after {
+   content: '>';
+   font-size: 46px;
+   margin-left: 5px;
+}
+
+.about-me__info,
+.my-skills__info,
+.education__info,
+.code-examples__info,
+.work-experience__info,
+.languages__info {
+   display: flex;
+   max-width: 760px;
+}
+
+.about-me__text {
+   font-weight: 400;
+   line-height: 120%;
+   color: #022A3D;
+}
+
+/*================MY SKILLS=========================*/
+
+.skills-rows {
+   display: flex;
+}
+
+.skills-rows__body {
+   display: block;
+   margin-left: -16.5%;
+}
+
+.skills-rows__up {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.skills-rows__up li:not(:last-child),
+.skills-rows__bottom li:not(:last-child) {
+   padding-right: 40px;
+}
+
+.skills-rows__up li::before,
+.university::before,
+.courses::before,
+.projects::before {
+   content: "";
+   width: 15px;
+   height: 15px;
+   background-color: #33FF00;
+   display: inline-block;
+   margin: 0px 10px 0px 0px;
+}
+
+.skills-rows__bottom {
+   display: flex;
+}
+.skills-rows__bottom li::before {
+   content: "";
+   width: 15px;
+   height: 15px;
+   background-color: #33FF00;
+   display: inline-block;
+   margin: 0px 10px 0px 0px;
+}
+
+/*================CODE EXAMPLES======================*/
+
+.code-examples__info {
+   max-width: 760px;
+   display: flex;
+}
+
+.pre-code {
+   display: flex;
+}
+
+.pre-code::before {
+   content: "";
+   width: 15px;
+   height: 180px;
+   background-color: #33FF00;
+   display: inline-block;
+   margin-right: 21px;
+   margin-left: 4px;
+}
+
+.code-examples__code {
+   max-width: 360px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+   color: #022A3D;
+}
+
+.code-examples__img {
+   padding-left: 40px;
+}
+
+/*================EDUCATION=========================*/
+
+.education__info,
+.work-experience__info,
+.languages__info {
+   margin-right: auto;
+   padding-left: 3.5%;
+}
+
+.university__item,
+.projects__item {
+   padding-left: 27px;
+   padding-top: 10px;
+   min-width: 500px;
+   margin-bottom: 30px;
+}
+
+.university__item li::before,
+.projects__item li::before {
+   content: "→";
+   color: #05415D;
+   padding-right: 7px;
+}
+
+.courses__item {
+   padding-left: 27px;
+   padding-top: 10px;
+   min-width: 500px;
+}
+
+.courses__item li::before {
+   content: "→";
+   color: #05415D;
+   padding-right: 7px;
+}
+
+/*================WORK EXPERIENCE=======================*/
+
+.projects__item a {
+   color: #001448;
+}
+
+.projects__item a:hover {
+   color: #25BB00;
+   text-decoration: underline;
+}
+
+.work-experience__items {
+   display: block;
+   margin-left: -5px;
+}
+
+/*================LANGUAGES=========================*/
+
+.languages__info {
+   display: flex;
+   align-items: center;
+}
+
+/*================FOOTER=========================*/
+
+.footer {
+   background-color: #25BB00;
+   margin-top: 70px;
+}
+
+.footer__body {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0px;
+   align-items: center;
+}
+
+.footer__right {
+   display: flex;
+}
+
+.footer__link,
+.footer__year {
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 130%;
+   text-align: center;
+   color: #FFFFFF;
+}
+.footer__link {
+   margin-right: 30px;
+   transition: all 0.2s ease 0s;
+}
+
+/*!=============keyframes animation=======================*/
+
+@keyframes myAnim {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+.header,
+.contacts__img,
+.contacts__body,
+.about-me__body,
+.my-skills__body,
+.code-examples__body,
+.education__body,
+.work-experience__body,
+.languages__body {
+   animation: myAnim 1s ease 0s 1 normal forwards;
 }
