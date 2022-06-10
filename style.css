@@ -522,8 +522,9 @@ body {
    align-items: center;
 }
 
-.footer__right {
+.footer__right, .footer__link {
    display: flex;
+   align-items: center;
 }
 
 .footer__link,
@@ -532,11 +533,15 @@ body {
    font-size: 17px;
    line-height: 130%;
    text-align: center;
-   color: #FFFFFF;
 }
 .footer__link {
+   color: #001448;
    margin-right: 30px;
    transition: all 0.2s ease 0s;
+}
+
+.footer__link-icon {
+   margin-right: 10px;
 }
 
 /*!=============keyframes animation=======================*/
