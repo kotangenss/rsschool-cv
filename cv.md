@@ -1,6 +1,5 @@
 # Elizaveta Novikova
 ## Contact Information
-###### Phone: `+7 922 934 58 53`
 ###### E-mail: `isupova.97@mail.ru`
 ###### Telegram: `@ElizavetaIsupova`
 ###### Discord nickname: `Elizaveta N. (@kotangenss)`
@@ -16,20 +15,39 @@ I am constantly developing in the study of technology, quickly navigate new info
 * Adobe Photoshop, Illustrator, Figma
 
 ## Code examples
-###### Task to solve when registering on Codewars:
-```function sum(a, b) {
-return a + b;
-}
-let result = sum(1, 2);
-alert( result ); 
+###### Part of the implementation of the pop-up window code on the site:
+```
+overlayPopUp.addEventListener("click", function (e) {
+
+loginPopUp.style.display = "flex";
+document.body.classList.toggle('_lock');
+loginPopUp.classList.toggle('_active');
+overlayPopUp.style.display = (overlayPopUp.style.display == "block") ? "none" : "block";
+
+setTimeout(() => {
+   popUpTitle.innerHTML = 'Log in to your account';
+
+   register.textContent = 'Don’t have an account?';
+   linkRegister.textContent = 'Register';
+
+   loginButtons.classList.remove('inactive');
+   loginDivider.classList.remove('inactive');
+   forgotPassword.classList.remove('inactive');
+   signIn.classList.remove('inactive');
+   signUp.classList.add('inactive');
+
+   change_max_height(true)
+   }, 500);
+});
 ```
 
 ## Work experience
-* [CV (сurriculum vitae)](https://github.com/kotangenss/rsschool-cv) - a document in which I describe my education and work experience
+* [Momentum](https://rolling-scopes-school.github.io/kotangenss-JSFEPRESCHOOL2022Q2/momentum/) - An analogue of the application "Momentum"
+* [Ancient Horror](https://kotangenss.github.io/codejam-eldritch/) - Helper application for the board game "Ancient Horror"
 
 ## Education
 ###### University:  `Vyatka State University, Kirov`
-###### Courses: `The Rolling Scopes School`
+###### Courses: `The Rolling Scopes School Stage 0`
 
 ## English language
-Language Proficiency - A2
+Language Proficiency - A1

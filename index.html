@@ -3,7 +3,8 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>CV (сurriculum vitae)</title>
+   <title>E. Novikova</title>
+   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
    <link href="style.css" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,10 +58,6 @@
                   <h1 class="contacts__name">elizaveta novikova</h1>
                   <ul class="contacts__list">
                      <li class="contacts__list item-contact">
-                        <div class="item-contact__icon"><img src="./assets/svg/icon/phone.svg" alt="Icon phone"></div>
-                        <p class="item-contact__info">+7 922 934 58 53</p>
-                     </li>
-                     <li class="contacts__list item-contact">
                         <div class="item-contact__icon"><img src="./assets/svg/icon/mail.svg" alt="Icon mail"></div>
                         <p class="item-contact__info">isupova.97@mail.ru</p>
                      </li>
@@ -82,13 +79,14 @@
          <section class="block__about-me about-me" id="about-me">
             <div class="about-me__container container">
                <div class="about-me__body">
-                  <h2 class="about-me__title">about me</h2>
+                  <h2 class="about-me__title">about&nbsp;me</h2>
                   <div class="about-me__info">
                      <p class="about-me__text">Hello! I am constantly developing in the study of technology, quickly
                         navigate new information and perfectly adapt to changes. I also have experience as a UI-UX
                         designer, which allows me to approach tasks creatively. Since 2019, I have been working as a
-                        freelancer, so I have the skills to organize work and manage time. <br><br> I own the basics
-                        <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>. I know how to work with the <b>Git</b> version
+                        freelancer, so I have the skills to organize work and manage time. <br><br>I own the
+                        basics <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>. I know how to work with the <b>Git</b>
+                        version
                         control system.
                      </p>
                   </div>
@@ -98,23 +96,19 @@
          <section class="block__my-skills my-skills" id="my-skills">
             <div class="my-skills__container container">
                <div class="my-skills__body">
-                  <h2 class="my-skills__title">my skills</h2>
+                  <h2 class="my-skills__title">my&nbsp;skills</h2>
                   <div class="my-skills__info">
                      <div class="my-skills__info skills-rows">
-                        <div class="skills-rows__body">
-                           <ul class="skills-rows__up">
-                              <li>HTML5</li>
-                              <li>CSS3</li>
-                              <li>JavaScript Basics</li>
-                              <li>Git, GitHub</li>
-                              <li>Jira</li>
-                           </ul>
-                           <ul class="skills-rows__bottom">
-                              <li>Adobe Photoshop, Adobe Illustrator, Figma</li>
-                              <li>VS Code</li>
-                              <li>Self-management</li>
-                           </ul>
-                        </div>
+                        <ul class="skills-rows">
+                           <li>HTML5</li>
+                           <li>CSS3</li>
+                           <li>JavaScript Basics</li>
+                           <li>Git, GitHub</li>
+                           <li>Jira</li>
+                           <li>Adobe Photoshop, Adobe Illustrator, Figma</li>
+                           <li>VS Code</li>
+                           <li>Self-management</li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -126,18 +120,32 @@
                   <h2 class="code-examples__title">Code examples</h2>
                   <div class="code-examples__info">
                      <pre class="pre-code">
-<code class="code-examples__code">let numberValue = prompt('Enter number', '');
-if (numberValue > 0) {
-alert(1);
-} else if (numberValue &lt; 0) {
-   alert(-1); 
-} else { 
-   alert(0) 
-}
+<code class="code-examples__code">overlayPopUp.addEventListener("click", function (e) {
+
+loginPopUp.style.display = "flex";
+document.body.classList.toggle('_lock');
+loginPopUp.classList.toggle('_active');
+overlayPopUp.style.display =
+(overlayPopUp.style.display == "block") ?
+"none" : "block";
+
+setTimeout(() =&gt; {
+   popUpTitle.innerHTML = 'Log in to your account';
+
+   register.textContent = 'Don’t have an account?';
+   linkRegister.textContent = 'Register';
+
+   loginButtons.classList.remove('inactive');
+   loginDivider.classList.remove('inactive');
+   forgotPassword.classList.remove('inactive');
+   signIn.classList.remove('inactive');
+   signUp.classList.add('inactive');
+
+   change_max_height(true)
+   }, 500);
+});
 </code>
 </pre>
-                     <img class="code-examples__img" src="./assets/img/keyboard.png" alt="Keyboard image" width="356"
-                        height="183">
                   </div>
                </div>
             </div>
@@ -171,8 +179,12 @@ alert(1);
                      <ul class="work-experience__items">
                         <li class="work-experience__items projects">Projects:
                            <ul class="projects__item">
-                              <li><u><i><b><a href="https://github.com/kotangenss/rsschool-cv/tree/gh-pages">CV
-                                             (сurriculum vitae)</a></b></i></u></li>
+                              <li><b>An analogue of the application "Momentum"<a
+                                       href="https://rolling-scopes-school.github.io/kotangenss-JSFEPRESCHOOL2022Q2/momentum/"><img
+                                          src="./assets/img/momentum.jpg" alt="Momentum"></a></b></li>
+                              <li><b>Helper application for game "Ancient Horror"<a
+                                       href="https://kotangenss.github.io/codejam-eldritch/"><img
+                                          src="./assets/img/codejam.jpg" alt="Momentum"></a></b></li>
                            </ul>
                         </li>
                      </ul>
@@ -190,21 +202,21 @@ alert(1);
                </div>
             </div>
          </section>
-         <footer class="block__footer footer">
-            <div class="footer__container container">
-               <div class="footer__body">
-                  <a class="footer__logo" href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school.svg"
-                        alt="Logo RS School" width="107" height="40"></a>
-                  <div class="footer__right">
-                     <a href="https://github.com/kotangenss" class="footer__link"><img class="footer__link-icon" src="./assets/svg/icon/github.svg" alt=""> kotangenss</a>
-                     <p class="footer__year">@ 2022</p>
-                  </div>
+      </main>
+      <footer class="block__footer footer">
+         <div class="footer__container container">
+            <div class="footer__body">
+               <a class="footer__logo" href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school.svg"
+                     alt="Logo RS School" width="107" height="40"></a>
+               <div class="footer__right">
+                  <a href="https://github.com/kotangenss" class="footer__link"><img class="footer__link-icon"
+                        src="./assets/svg/icon/github.svg" alt="github icon"></a>
+                  <p class="footer__year">2022</p>
                </div>
             </div>
-         </footer>
-      </main>
+         </div>
+      </footer>
    </div>
 </body>
 
 </html>
-
