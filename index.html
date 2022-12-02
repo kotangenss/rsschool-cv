@@ -9,7 +9,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
 </head>
 
@@ -17,187 +20,191 @@
    <div class="wrapper">
       <header class="header">
          <div class="header__container container">
-            <a href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school.svg" alt="Logo RS School" width="107"
-                  height="40"></a>
+            <a class="header-logo" href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school-black.svg"
+                  alt="Logo RS School" width="107" height="40"></a>
+            <div class="menu-icon">
+               <span></span>
+            </div>
             <nav class="header__menu menu">
                <ul class="menu__list">
                   <li class="menu__item">
-                     <a class="menu__link" href="#contacts">Contacts</a>
+                     <a class="menu__link" data-goto="#contacts" href="#contacts">Contacts</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#about-me">About me</a>
+                     <a class="menu__link" data-goto="#about-me" href="#about-me">About me</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#my-skills">My skills</a>
+                     <a class="menu__link" data-goto="#my-skills" href="#my-skills">My skills</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#code-examples">Code examples</a>
+                     <a class="menu__link" data-goto="#education" href="#education">Education</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#education">Education</a>
+                     <a class="menu__link" data-goto="#languages" href="#languages">Languages</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#work-experience">Work experience</a>
+                     <a class="menu__link" data-goto="#work-experience" href="#work-experience">Work experience</a>
                   </li>
                   <li class="menu__item">
-                     <a class="menu__link" href="#languages">Languages</a>
+                     <a class="menu__link" data-goto="#code-examples" href="#code-examples">Code examples</a>
                   </li>
                </ul>
             </nav>
          </div>
       </header>
-      <main class="block">
-         <section class="block__contacts contacts" id="contacts">
+      <main>
+         <section class="contacts" id="contacts">
             <div class="contacts__container container">
-               <img class="contacts__img" src="./assets/img/photo.png" alt="Photograph of the author" width="335"
-                  height="399">
-               <div class="contacts__body">
-                  <div class="contacts__title-wrapper">
-                     <h3 class="contacts__title">junior front-end developer</h3>
-                  </div>
-                  <h1 class="contacts__name">elizaveta novikova</h1>
-                  <ul class="contacts__list">
-                     <li class="contacts__list item-contact">
-                        <div class="item-contact__icon"><img src="./assets/svg/icon/mail.svg" alt="Icon mail"></div>
-                        <p class="item-contact__info">isupova.97@mail.ru</p>
-                     </li>
-                     <li class="contacts__list item-contact">
-                        <div class="item-contact__icon"><img src="./assets/svg/icon/telegram.svg" alt="Icon telegram">
-                        </div>
-                        <p class="item-contact__info">@ElizavetaIsupova</p>
-                     </li>
-                     <li class="contacts__list item-contact">
-                        <div class="item-contact__icon"><img src="./assets/svg/icon/discord.svg" alt="Icon discord">
-                        </div>
-                        <p class="item-contact__info">Elizaveta N. (@kotangenss)</p>
-                     </li>
-                  </ul>
-                  <h3 class="contacts__location">Kirov, Russia</h3>
+               <div class="contacts__container my-name">
+                  <h2>Hi, i am</h2>
+                  <h1>Elizaveta Novikova</h1>
+                  <h2>Junior front-end developer<br>Kirov, Russia</h2>
                </div>
-            </div>
-         </section>
-         <section class="block__about-me about-me" id="about-me">
-            <div class="about-me__container container">
-               <div class="about-me__body">
-                  <h2 class="about-me__title">about&nbsp;me</h2>
-                  <div class="about-me__info">
-                     <p class="about-me__text">Hello! I am constantly developing in the study of technology, quickly
-                        navigate new information and perfectly adapt to changes. I also have experience as a UI-UX
-                        designer, which allows me to approach tasks creatively. Since 2019, I have been working as a
-                        freelancer, so I have the skills to organize work and manage time. <br><br>I own the
-                        basics <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>. I know how to work with the <b>Git</b>
-                        version
-                        control system.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="block__my-skills my-skills" id="my-skills">
-            <div class="my-skills__container container">
-               <div class="my-skills__body">
-                  <h2 class="my-skills__title">my&nbsp;skills</h2>
-                  <div class="my-skills__info">
-                     <div class="my-skills__info skills-rows">
-                        <ul class="skills-rows">
-                           <li>HTML5</li>
-                           <li>CSS3</li>
-                           <li>JavaScript Basics</li>
-                           <li>Git, GitHub</li>
-                           <li>Jira</li>
-                           <li>Adobe Photoshop, Adobe Illustrator, Figma</li>
-                           <li>VS Code</li>
-                           <li>Self-management</li>
-                        </ul>
+               <div class="contacts__container my-contacts">
+                  <div class="my-contacts__body contact">
+                     <div class="contact__item" id="contact-mail">
+                        <div class="contact__item body">
+                           <img src="./assets/svg/icon/mail.svg" alt="icon mail" class="contact__mail icon">
+                           <div class="contact__item info">isupova.97@mail.ru</div>
+                        </div>
+                     </div>
+                     <div class="contact__item" id="contact-discord">
+                        <div class="contact__item body">
+                           <img src="./assets/svg/icon/discord.svg" alt="icon discord" class="contact__mail icon">
+                           <div class="contact__item info">Elizaveta N. (@kotangenss)</div>
+                        </div>
+                     </div>
+                     <div class="contact__item" id="contact-telegram">
+                        <div class="contact__item body">
+                           <img src="./assets/svg/icon/telegram.svg" alt="icon telegram" class="contact__mail icon">
+                           <div class="contact__item info">@ElizavetaIsupova</div>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
-         <section class="block__code-examples code-examples" id="code-examples">
-            <div class="code-examples__container container">
-               <div class="code-examples__body">
-                  <h2 class="code-examples__title">Code examples</h2>
-                  <div class="code-examples__info">
-                     <pre class="pre-code">
-<code class="code-examples__code">overlayPopUp.addEventListener("click", function (e) {
-
-loginPopUp.style.display = "flex";
-document.body.classList.toggle('_lock');
-loginPopUp.classList.toggle('_active');
-overlayPopUp.style.display =
-(overlayPopUp.style.display == "block") ?
-"none" : "block";
-
-setTimeout(() =&gt; {
-   popUpTitle.innerHTML = 'Log in to your account';
-
-   register.textContent = 'Don’t have an account?';
-   linkRegister.textContent = 'Register';
-
-   loginButtons.classList.remove('inactive');
-   loginDivider.classList.remove('inactive');
-   forgotPassword.classList.remove('inactive');
-   signIn.classList.remove('inactive');
-   signUp.classList.add('inactive');
-
-   change_max_height(true)
-   }, 500);
-});
-</code>
-</pre>
-                  </div>
+         <div class="about-me">
+            <div class="about-me__container container">
+               <div class="about-me__up">
+                  <section class="about-me__info" id="about-me">
+                     <h2>about me</h2>
+                     <p>I am constantly developing in the study of technology, quickly navigate new information and
+                        perfectly adapt to changes.
+                        I also have experience as a UI-UX designer, which allows me to approach tasks creatively. Since
+                        2019, I have been
+                        working as a freelancer, so I have the skills to organize work and manage time. <br> <br> I own
+                        the
+                        basics HTML, CSS,
+                        JavaScript, Git. I know how to work with the Git version control system.</p>
+                  </section>
+                  <section class="about-me__skills skills" id="my-skills">
+                     <h2>my skills</h2>
+                     <div class="skills__info">
+                        <div class="skills__info skills-rows">
+                           <ul class="skills-rows">
+                              <li>HTML5</li>
+                              <li>CSS3</li>
+                              <li>JavaScript Basics</li>
+                              <li>Git, GitHub</li>
+                              <li>VS Code</li>
+                              <li>Photoshop, Illustrator, Figma</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+               <div class="about-me__down">
+                  <section class="about-me__education education" id="education">
+                     <h2>university</h2>
+                     <div class="education__item">
+                        <div class="education__item body">
+                           <img src="./assets/svg/icon/edu.svg" alt="icon education" class="education icon">
+                           <div class="education__item info">Vyatka State University, Kirov</div>
+                        </div>
+                     </div>
+                     <h2 id="title-courses">courses</h2>
+                     <div class="courses__item">
+                        <div class="courses__item body">
+                           <img src="./assets/svg/icon/courses.svg" alt="icon courses" class="courses icon">
+                           <div class="courses__item info">The Rolling Scopes School Stage 0</div>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="about-me__languages languages" id="languages">
+                     <h2>languages</h2>
+                     <p>English – A1<br>Deutsche – B2<br>Russian – Native</p>
+                  </section>
                </div>
             </div>
-         </section>
-         <section class="block__education education" id="education">
-            <div class="education__container container">
-               <div class="education__body">
-                  <h2 class="education__title">education</h2>
-                  <div class="education__info">
-                     <ul class="education__items">
-                        <li class="education__items university">University:
-                           <ul class="university__item">
-                              <li><b>Vyatka State University, Kirov</b></li>
-                           </ul>
-                        </li>
-                        <li class="education-items courses">Courses:
-                           <ul class="courses__item">
-                              <li><b>The Rolling Scopes School Stage 0</b></li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="block__work-experience work-experience" id="work-experience">
+         </div>
+         <section class="work-experience" id="work-experience">
             <div class="work-experience__container container">
-               <div class="work-experience__body">
-                  <h2 class="work-experience__title">Work experience</h2>
-                  <div class="work-experience__info">
-                     <ul class="work-experience__items">
-                        <li class="work-experience__items projects">Projects:
-                           <ul class="projects__item">
-                              <li><b>An analogue of the application "Momentum"<a
-                                       href="https://rolling-scopes-school.github.io/kotangenss-JSFEPRESCHOOL2022Q2/momentum/"><img
-                                          src="./assets/img/momentum.jpg" alt="Momentum"></a></b></li>
-                              <li><b>Helper application for game "Ancient Horror"<a
-                                       href="https://kotangenss.github.io/codejam-eldritch/"><img
-                                          src="./assets/img/codejam.jpg" alt="Momentum"></a></b></li>
-                           </ul>
-                        </li>
-                     </ul>
+               <h2>work experience</h2>
+               <div class="work-experiens__items">
+                  <div class="item-work momentum">
+                     <div class="momentum-item">
+                        <h3>An analogue of the application «Momentum»</h3>
+                        <a href="https://kotangenss.github.io/momentum/"><img src="./assets/img/momentum.jpg"
+                              alt="momentum"></a>
+                        <div class="item-work__description">
+                           The application shows the time and username. The background image and greeting changes
+                           depending on the time of day.
+                           The application has a clock, an image slider, weather widgets, an audio player, a quote of
+                           the day block, and settings.
+                           Local storage is used to store the username and location.
+                        </div>
+                     </div>
+                     <a class="link-project" href="https://kotangenss.github.io/momentum/">see project</a>
+                  </div>
+                  <div class="item-work codejam">
+                     <div class="codejam-item">
+                        <h3>Helper application for game «Ancient Horror»</h3>
+                        <a href="https://kotangenss.github.io/codejam-eldritch/"><img src="./assets/img/codejam.jpg"
+                              alt="codejam"></a>
+                        <div class="item-work__description">
+                           This application implements a complex algorithm for mixing a deck of cards for the game
+                           "Ancient Horror"
+                        </div>
+                     </div>
+                     <a class="link-project" href="https://kotangenss.github.io/codejam-eldritch/">see project</a>
                   </div>
                </div>
             </div>
          </section>
-         <section class="block__languages languages" id="languages">
-            <div class="languages__container container">
-               <div class="languages__body">
-                  <h2 class="languages__title">Languages</h2>
-                  <div class="languages__info">
-                     <p class="languages__text">English – <b>A1</b>, Deutsche – <b>B2</b>, Russian – <b>Native</b></p>
+         <section class="code-example" id="code-examples">
+            <div class="code-example container">
+               <h3>code example</h3>
+               <div class="code-example__body">
+                  <img src="./assets/img/code-lines.png" alt="abstract image">
+                  <div class="code-examples__example">
+                     <pre class="pre-code">
+   <code class="code-examples__code">overlayPopUp.addEventListener("click", function (e) {
+   
+   loginPopUp.style.display = "flex";
+   document.body.classList.toggle('_lock');
+   loginPopUp.classList.toggle('_active');
+   overlayPopUp.style.display =
+   (overlayPopUp.style.display == "block") ?
+   "none" : "block";
+   
+   setTimeout(() =&gt; {
+      popUpTitle.innerHTML = 'Log in to your account';
+   
+      register.textContent = 'Don&#8242;t have an account?';
+      linkRegister.textContent = 'Register';
+   
+      loginButtons.classList.remove('inactive');
+      loginDivider.classList.remove('inactive');
+      forgotPassword.classList.remove('inactive');
+      signIn.classList.remove('inactive');
+      signUp.classList.add('inactive');
+   
+      change_max_height(true)
+      }, 500);
+   });
+   </code>
+                  </pre>
                   </div>
                </div>
             </div>
@@ -208,15 +215,14 @@ setTimeout(() =&gt; {
             <div class="footer__body">
                <a class="footer__logo" href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school.svg"
                      alt="Logo RS School" width="107" height="40"></a>
-               <div class="footer__right">
-                  <a href="https://github.com/kotangenss" class="footer__link"><img class="footer__link-icon"
-                        src="./assets/svg/icon/github.svg" alt="github icon"></a>
-                  <p class="footer__year">2022</p>
-               </div>
+               <p class="footer__year" style="color: white;">2022</p>
+               <a href="https://github.com/kotangenss" class="footer__link"><img class="footer__link-icon"
+                     src="./assets/svg/icon/github.svg" alt="github icon"></a>
             </div>
          </div>
       </footer>
    </div>
+   <script src="./script.js"></script>
 </body>
 
 </html>
