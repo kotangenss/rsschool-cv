@@ -1181,6 +1181,10 @@ html {
    text-align: center;
 }
 
+.footer__year {
+   color: white;
+}
+
 .footer__link {
    color: #001448;
    transition: all 0.2s ease 0s;

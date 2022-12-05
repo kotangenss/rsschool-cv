@@ -180,26 +180,26 @@
                   <div class="code-examples__example">
                      <pre class="pre-code">
    <code class="code-examples__code">overlayPopUp.addEventListener("click", function (e) {
-   
+
    loginPopUp.style.display = "flex";
    document.body.classList.toggle('_lock');
    loginPopUp.classList.toggle('_active');
    overlayPopUp.style.display =
    (overlayPopUp.style.display == "block") ?
    "none" : "block";
-   
+
    setTimeout(() =&gt; {
       popUpTitle.innerHTML = 'Log in to your account';
-   
+
       register.textContent = 'Don&#8242;t have an account?';
       linkRegister.textContent = 'Register';
-   
+
       loginButtons.classList.remove('inactive');
       loginDivider.classList.remove('inactive');
       forgotPassword.classList.remove('inactive');
       signIn.classList.remove('inactive');
       signUp.classList.add('inactive');
-   
+
       change_max_height(true)
       }, 500);
    });
@@ -215,7 +215,7 @@
             <div class="footer__body">
                <a class="footer__logo" href="https://rs.school/js/"><img src="./assets/svg/logo__rs_school.svg"
                      alt="Logo RS School" width="107" height="40"></a>
-               <p class="footer__year" style="color: white;">2022</p>
+               <p class="footer__year">2022</p>
                <a href="https://github.com/kotangenss" class="footer__link"><img class="footer__link-icon"
                      src="./assets/svg/icon/github.svg" alt="github icon"></a>
             </div>
